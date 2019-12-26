@@ -4,6 +4,10 @@
   become: yes 
   become_method: sudo #  
   tasks:
+  - name: Install firewalld 
+    yum:
+      name: firewalld
+      state: present 
   - name: Install apache packages 
     yum:
       name: httpd
