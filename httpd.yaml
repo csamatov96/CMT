@@ -1,7 +1,6 @@
 ---
-- hosts: server1
+- hosts: apache
   tasks:
-    name: install httpd 
-    yum: 
-      name=httpd state=latest 
+      name: install httpd*
+      yum: name=httpd state=latest
     
