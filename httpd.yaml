@@ -1,6 +1,8 @@
 ---
 - name: This sets up an httpd webserver
   hosts: all
+  become: true 
+  become_user: yes #  
   tasks:
   - name: Install apache packages 
     yum:
